@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.nav-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logos img {
+  height: 100px;
+  margin: 10px;
+}
+
+.faculty-photo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Header Navigation */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #003366, #0066cc); /* Initial gradient */
+  color: white;
+  z-index: 1000;
+  transition: background 0.3s ease; /* Smooth transition for background change */
+  padding: 1rem; /* Padding to give space inside the navbar */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+  color: #ffcc00; /* Hover color for navbar links */
+}
+
+/* Change header background on scroll */
+header.scrolled {
+  background-color: transparent; /* Transparent background on scroll */
+  color: white; /* Maintain text color */
+}
+
+section {
+  line-break:0;
+  padding: 80px 20px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #003366, #0066cc);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffaa00;
+}
+
+
+/* Card Styles */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Office Bearers Section */
+.card-content h3 {
+  margin: 10px 0;
+}
+
+/* Form Styles */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-left, .form-right {
+  width: 48%;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button[type="submit"] {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #004d99;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logos img {
+    height: 80px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-left, .form-right {
+    width: 100%;
+  }
+}
